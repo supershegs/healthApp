@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "medicalapp"
+version = "0.1.0"
+description = "Health Medical App"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+django = "^3.2"
+# Add other dependencies as needed
+djangorestframework = "^3.14.0"
+dj-database-url = "^2.1.0"
+python-decouple = "^3.8"
+psycopg2 = "^2.9.8"
+pillow = "^10.0.1"
+whitenoise = {extras = ["brotli"], version = "^6.5.0"}
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
